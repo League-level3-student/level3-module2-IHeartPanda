@@ -1,5 +1,7 @@
 package _00_Sorting_Algorithms;
 
+import java.util.Random;
+
 import javax.swing.JOptionPane;
 
 /*
@@ -11,10 +13,11 @@ import javax.swing.JOptionPane;
  * SelectionSorter"
  * InsertionSorter"
  * QuickSorter"
- * MergeSorter
- * HeapSorter
+ * MergeSorter"
+ * HeapSorter"
  * BogoSorter
  */
+
 
 public class _02_SortingAlgorithms {
 	public static void main(String[] args) {
