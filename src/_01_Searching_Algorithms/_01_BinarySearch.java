@@ -12,9 +12,18 @@ public class _01_BinarySearch {
 	//1. Complete the steps in the binarySearch method.
 	//   We can assume array is already sorted
 	public static int binarySearch(int[] array, int start, int end, int value) {
+		int mid = (start+end)/2;
 		//2. if start is greater than end, then
 		//   do steps 3 - 6.
-		
+		if (start>end) {
+			if (array[mid] == value) {
+				return mid;
+			}
+			if (array[mid]>value) {
+				return binarySearch(array, start, mid-1, value);
+			}
+			return binarySearch(array, mid+1, end, value);
+		}
 			//3. create an integer called mid and set it equal
 			//   to the half way point between start and end
 
@@ -30,6 +39,6 @@ public class _01_BinarySearch {
             //   method. Use mid + 1 as the start, and pass in end.
  
         //7. return -1 because the value was not found
-        return 0;
+        return -1;
 	} 
 }

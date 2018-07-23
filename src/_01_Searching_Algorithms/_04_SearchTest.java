@@ -10,8 +10,16 @@ class _04_SearchTest {
 	
 	@Test
 	void testLinearSearch() {
-		//1. use the assertEquals method to test your linear search method.
-	}
+		String[] testLinear = new String[5];
+		testLinear[0] = "first";
+		testLinear[1] = "second";
+		testLinear[2] = "third";
+		testLinear[3] = "fourth";
+		testLinear[4] = "fifth";
+		assertEquals(2, _00_LinearSearch.linearSearch(testLinear, "third"));
+		assertEquals(0, _00_LinearSearch.linearSearch(testLinear, "first"));
+		assertEquals(4, _00_LinearSearch.linearSearch(testLinear, "fifth"));
+}
 
 	@Test
 	void testBinarySearch() {
